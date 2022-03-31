@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PeliculasController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -23,3 +23,7 @@ Route::get('/product', [UserController::class, 'show']);
 Route::get('/product}', [UserController::class, 'create']); 
 Route::get('/product/{id}', [UserController::class, 'update']);
 Route::get('/product/{id}', [UserController::class, 'delete']);
+
+
+//peliculas:
+Route::get('/peliculas', [UserController::class, 'index']); 
